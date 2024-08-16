@@ -2,7 +2,7 @@
   <section class="flex items-center justify-center relative py-24">
     <img src="/about-img.png" alt="" class="rounded-xl object-contain" />
     <div
-      class="flex gap-6 text-white flex-col bg-blue-900 rounded-lg items-start p-8 -ml-48">
+      class="flex gap-6 text-white flex-col bg-[#2947A9] rounded-lg items-start p-8 -ml-48">
       <h1 class="text-3xl font-bold">Sobre Nosotros</h1>
       <div class="max-w-sm text-balance space-y-3">
         <p>
@@ -15,7 +15,8 @@
           al construir en Argentina.
         </p>
       </div>
-      <button class="bg-white px-4 py-2 text-blue-900 font-semibold rounded-sm">
+      <button
+        class="bg-white px-4 py-2 text-[#2947A9] font-semibold rounded-sm">
         Leer mas sobre nosotros
       </button>
     </div>

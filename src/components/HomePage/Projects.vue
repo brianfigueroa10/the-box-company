@@ -8,7 +8,7 @@
         <span
           :class="
             selectedCategory === null
-              ? 'text-blue-900 border-l-4 pl-2 border-blue-900 font-semibold'
+              ? 'text-[#2947A9] border-l-4 pl-2 border-[#2947A9] font-semibold'
               : 'text-blue-800/50'
           "
           @click="filterByCategory(null)"
@@ -20,7 +20,7 @@
           :key="category"
           :class="
             selectedCategory === category
-              ? 'text-blue-900 border-l-4 pl-2 border-blue-900 font-semibold'
+              ? 'text-[#2947A9] border-l-4 pl-2 border-[#2947A9] font-semibold'
               : 'text-blue-800/50'
           "
           @click="filterByCategory(category)"
@@ -40,7 +40,7 @@
         class="flex flex-col lg:w-[300px] h-72 min-h-64">
         <img :src="project.img" :alt="project.name" class="object-cover h-44" />
         <div
-          class="w-auto bg-blue-900 text-white grow justify-between h-full flex flex-col p-2">
+          class="w-auto bg-[#2947A9] text-white grow justify-between h-full flex flex-col p-2">
           <h3
             class="text-accent text-xl tracking-tight font-medium cursor-pointer text-gray-200">
             {{ project.name }}

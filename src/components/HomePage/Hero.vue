@@ -9,8 +9,11 @@
       class="z-10 w-full flex flex-col justify-between gap-6 max-lg:text-center ml-[10%]">
       <h1 class="text-7xl leading-none font-extrabold uppercase">
         Construir <br />
-        cosas es<br />
-        <span class="text-blue-900"> nuestra misión </span>
+        es
+        <span class="text-[#2947A9]">
+          nuestra <br />
+          misión
+        </span>
       </h1>
       <p class="max-w-md font-normal">
         Transformamos ideas en realidades sólidas. Con años de experiencia en el

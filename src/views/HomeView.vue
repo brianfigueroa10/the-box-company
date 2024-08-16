@@ -16,6 +16,5 @@ import ContactForm from '@/components/HomePage/ContactForm.vue'
     <About />
     <Ads />
     <Projects />
-    <ContactForm />
   </main>
 </template>

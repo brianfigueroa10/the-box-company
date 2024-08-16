@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col items-center justify-center w-full gap-8 bg-[#F6F8F7] py-24">
+    class="flex flex-col items-center justify-center w-full gap-8 bg-[#F6F8F7] py-16">
     <div class="flex flex-col items-center justify-center text-center gap-3">
       <h2 class="font-black text-4xl">¿Qué podemos hacer por usted?</h2>
       <p class="max-w-md text-gray-800">
@@ -61,7 +61,7 @@
           required
           class="w-full px-3 rounded-lg py-2 min-h-24"></textarea>
       </div>
-      <button class="px-12 py-2 rounded-lg bg-blue-900 text-white">
+      <button class="px-12 py-2 rounded-lg bg-[#2947A9] text-white">
         Enviar
       </button>
     </form>
