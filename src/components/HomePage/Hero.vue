@@ -22,13 +22,15 @@
         dedicación. Desde el primer ladrillo hasta el último detalle, estamos
         aquí para hacer realidad tu visión.
       </p>
-      <div class="flex max-lg:justify-center gap-5 mt-6">
-        <button class="px-5 py-2 rounded-md bg-slate-950 text-white">
+      <div class="flex max-lg:justify-center gap-5 mt-6 font-medium">
+        <a href="#contact" class="px-5 py-2 rounded-md bg-[#2947A9] text-white">
           Contacto
-        </button>
-        <button class="px-5 py-2 rounded-md bg-slate-300 text-black">
+        </a>
+        <a
+          href="/projects"
+          class="px-5 py-2 rounded-md bg-white/50 text-[#2947A9]">
           Proyectos
-        </button>
+        </a>
       </div>
     </div>
   </section>

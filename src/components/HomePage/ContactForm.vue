@@ -1,6 +1,7 @@
 <template>
   <section
-    class="flex flex-col items-center justify-center w-full gap-8 bg-[#F6F8F7] py-16">
+    class="flex flex-col items-center justify-center w-full gap-8 bg-[#F6F8F7] py-16"
+    id="contact">
     <div class="flex flex-col items-center justify-center text-center gap-3">
       <h2 class="font-black text-4xl">¿Qué podemos hacer por usted?</h2>
       <p class="max-w-md text-gray-800">
@@ -9,7 +10,9 @@
       </p>
     </div>
 
-    <form action="" class="flex flex-col items-center justify-center gap-y-5">
+    <form
+      @submit.prevent="handleSubmit"
+      class="flex flex-col items-center justify-center gap-y-5">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5">
         <div class="flex flex-col gap-1">
           <label for="name" class="text-xs font-medium"
@@ -18,6 +21,7 @@
           <input
             type="text"
             id="name"
+            v-model="form.name"
             class="rounded-lg bg-white placeholder:px-3 px-3 w-64 h-8"
             required />
         </div>
@@ -28,6 +32,7 @@
           <input
             type="email"
             id="email"
+            v-model="form.email"
             class="rounded-lg bg-white placeholder:px-3 px-3 w-64 h-8"
             required />
         </div>
@@ -37,8 +42,10 @@
           >
           <select
             id="reason"
-            class="rounded-lg bg-white placeholder:px-3 px-3 w-64 h-8">
-            <option value="question">Pregunta</option>
+            class="rounded-lg bg-white px-2 w-64 h-8 text-sm"
+            v-model="form.reason">
+            >
+            <option value="question">Consultas</option>
             <option value="budget">Presupuesto</option>
             <option value="partnership">Socios</option>
             <option value="other">Otro</option>
@@ -47,8 +54,9 @@
         <div class="flex flex-col gap-1">
           <label for="phone" class="text-xs font-medium">Teléfono</label>
           <input
-            type="tel"
+            type="number"
             id="phone"
+            v-model="form.phone"
             class="rounded-lg bg-white placeholder:px-3 px-3 w-64 h-8" />
         </div>
       </div>
@@ -59,9 +67,12 @@
         <textarea
           id="message"
           required
+          v-model="form.message"
           class="w-full px-3 rounded-lg py-2 min-h-24"></textarea>
       </div>
-      <button class="px-12 py-2 rounded-lg bg-[#2947A9] text-white">
+      <button
+        class="px-12 py-2 rounded-lg bg-[#2947A9] text-white"
+        type="submit">
         Enviar
       </button>
     </form>
@@ -69,5 +80,29 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: '',
+        reason: 'question',
+        phone: '',
+      },
+    }
+  },
+  methods: {
+    handleSubmit() {
+      alert('Formulario enviado')
+      this.form.name = ''
+      this.form.email = ''
+      this.form.message = ''
+      this.form.reason = 'question'
+      this.form.phone = ''
+
+      // Resetear otros campos del formulario
+    },
+  },
+}
 </script>
