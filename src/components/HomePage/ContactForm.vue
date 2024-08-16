@@ -4,7 +4,7 @@
     id="contact">
     <div class="flex flex-col items-center justify-center text-center gap-3">
       <h2 class="font-black text-4xl">¿Qué podemos hacer por usted?</h2>
-      <p class="max-w-md text-gray-800">
+      <p class="max-w-md text-gray-800 max-md:px-8 text-balance">
         Estamos listos para trabajar en un proyecto de cualquier complejidad, ya
         sea comercial o residencial.
       </p>
@@ -12,9 +12,10 @@
 
     <form
       @submit.prevent="handleSubmit"
-      class="flex flex-col items-center justify-center gap-y-5">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5">
-        <div class="flex flex-col gap-1">
+      class="flex flex-col items-center justify-center max-md:w-full max-md:px-6 gap-y-5">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 max-md:w-full">
+        <div class="flex flex-col gap-1 w-full">
           <label for="name" class="text-xs font-medium"
             >Nombre <span class="text-red-600">*</span></label
           >
@@ -22,7 +23,7 @@
             type="text"
             id="name"
             v-model="form.name"
-            class="rounded-lg bg-white placeholder:px-3 px-3 w-64 h-8"
+            class="rounded-lg bg-white placeholder:px-3 px-3 h-8 w-full"
             required />
         </div>
         <div class="flex flex-col gap-1">
@@ -33,7 +34,7 @@
             type="email"
             id="email"
             v-model="form.email"
-            class="rounded-lg bg-white placeholder:px-3 px-3 w-64 h-8"
+            class="rounded-lg bg-white placeholder:px-3 px-3 w-full h-8"
             required />
         </div>
         <div class="flex flex-col gap-1">
@@ -42,7 +43,7 @@
           >
           <select
             id="reason"
-            class="rounded-lg bg-white px-2 w-64 h-8 text-sm"
+            class="rounded-lg bg-white px-2 h-8 text-sm w-full"
             v-model="form.reason">
             >
             <option value="question">Consultas</option>
@@ -54,10 +55,10 @@
         <div class="flex flex-col gap-1">
           <label for="phone" class="text-xs font-medium">Teléfono</label>
           <input
-            type="number"
+            type="tel"
             id="phone"
             v-model="form.phone"
-            class="rounded-lg bg-white placeholder:px-3 px-3 w-64 h-8" />
+            class="rounded-lg bg-white placeholder:px-3 px-3 w-full h-8" />
         </div>
       </div>
       <div class="flex w-full flex-col gap-1">
@@ -71,7 +72,7 @@
           class="w-full px-3 rounded-lg py-2 min-h-24"></textarea>
       </div>
       <button
-        class="px-12 py-2 rounded-lg bg-[#2947A9] text-white"
+        class="px-12 py-2 w-full rounded-lg bg-[#2947A9] text-white"
         type="submit">
         Enviar
       </button>
