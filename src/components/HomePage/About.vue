@@ -1,8 +1,12 @@
 <template>
-  <section class="flex items-center justify-center relative py-24">
-    <img src="/about-img.png" alt="" class="rounded-xl object-contain" />
+  <section
+    class="flex items-center max-lg:flex-col justify-center relative max-lg:px-6 py-24">
+    <img
+      src="/about-img.png"
+      alt=""
+      class="rounded-xl object-contain max-xl:w-2/3 max-md:w-full" />
     <div
-      class="flex gap-6 text-white flex-col bg-[#2947A9] rounded-lg items-start p-8 -ml-48">
+      class="flex gap-6 text-white flex-col bg-[#2947A9] rounded-lg items-start p-8 lg:-ml-48">
       <h1 class="text-3xl font-bold">Sobre Nosotros</h1>
       <div class="max-w-sm text-balance space-y-3">
         <p>

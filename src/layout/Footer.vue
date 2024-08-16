@@ -1,6 +1,7 @@
 <template>
   <footer class="flex flex-col items-center pt-16 gap-14">
-    <header class="flex justify-around w-full">
+    <header
+      class="flex justify-around w-full max-lg:flex-col-reverse max-lg:items-center max-lg:gap-10">
       <aside class="flex list-none gap-3 font-medium">
         <div class="flex flex-col gap-3 text-[#2947A9]">
           <li>Dirección:</li>
@@ -34,7 +35,7 @@
         </div>
       </aside>
     </header>
-    <section class="bg-[#2947A9] w-full text-center p-4 text-white font-medium">
+    <section class="bg-[#2947A9] w-full text-center p-6 text-white font-medium">
       <p>© 2024 TheBox. Todos los derechos reservados.</p>
     </section>
   </footer>

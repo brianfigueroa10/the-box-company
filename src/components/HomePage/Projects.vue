@@ -1,10 +1,11 @@
 <template>
   <section
-    class="flex gap-9 w-full md:px-44 py-24 justify-between items-start min-h-[800px]"
+    class="flex max-xl:flex-col gap-9 w-full md:px-44 py-24 justify-between max-xl:items-center items-start min-h-[800px]"
     id="projects ">
-    <div class="flex flex-col">
+    <div class="flex flex-col max-md:items-center">
       <h2 class="font-noto font-bold flex text-4xl text-primary">Proyectos</h2>
-      <aside class="flex gap-3 flex-col justify-center py-5">
+      <aside
+        class="flex flex-col max-md:w-10/12 max-xl:flex-row max-lg:gap-4 xl:gap-4 max-md:flex-wrap gap-10 justify-center py-5">
         <span
           :class="
             selectedCategory === null
@@ -37,7 +38,7 @@
       <div
         v-for="project in filteredprojects"
         :key="project.id"
-        class="flex flex-col lg:w-[300px] h-72 min-h-64">
+        class="flex flex-col lg:w-[300px] h-72 min-h-64 max-md:w-full">
         <img :src="project.img" :alt="project.name" class="object-cover h-44" />
         <div
           class="w-auto bg-[#2947A9] text-white grow justify-between h-full flex flex-col p-2">

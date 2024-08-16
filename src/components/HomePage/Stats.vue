@@ -1,7 +1,7 @@
 <template>
   <section
     class="flex flex-col md:flex-row items-center justify-center w-full gap-16 pt-14 pb-24">
-    <img src="/Stats.png" alt="stats" class="w-1/3" />
+    <img src="/Stats.png" alt="stats" class="lg:w-1/3" />
     <div class="flex gap-6 text-[#2947A9] flex-col rounded-lg items-start p-6">
       <h1 class="text-5xl font-bold">
         30 Años de <br />
