@@ -8,7 +8,7 @@
     <nav class="flex gap-5 font-medium max-lg:hidden">
       <a href="/">Inicio</a>
       <a href="/about">Sobre Nosotros</a>
-      <a href="#">Contacto</a>
+      <a href="/projects">Proyectos</a>
     </nav>
     <nav class="hidden max-md:block">
       <svg

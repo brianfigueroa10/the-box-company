@@ -101,6 +101,9 @@
       </p>
     </div>
   </section>
+  <ContactForm />
 </template>
 
-<script></script>
+<script setup>
+import ContactForm from '@/components/HomePage/ContactForm.vue'
+</script>

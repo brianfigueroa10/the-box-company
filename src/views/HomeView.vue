@@ -9,12 +9,13 @@ import ContactForm from '@/components/HomePage/ContactForm.vue'
 </script>
 
 <template>
-  <main class="mt-10">
+  <main>
     <Hero />
     <Stats />
     <Services />
     <About />
     <Ads />
     <Projects />
+    <ContactForm />
   </main>
 </template>

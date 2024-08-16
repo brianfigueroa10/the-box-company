@@ -19,10 +19,11 @@
           al construir en Argentina.
         </p>
       </div>
-      <button
+      <a
+        href="/about"
         class="bg-white px-4 py-2 text-[#2947A9] font-semibold rounded-sm">
         Leer mas sobre nosotros
-      </button>
+      </a>
     </div>
   </section>
 </template>

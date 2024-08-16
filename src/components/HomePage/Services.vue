@@ -26,7 +26,7 @@ export default {
     return {
       data: [
         {
-          icon: '/icon.png',
+          icon: '/icon1.png',
           title: 'Construcción',
         },
         {

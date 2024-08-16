@@ -8,7 +8,7 @@ import ContactForm from './components/HomePage/ContactForm.vue'
 
 <template>
   <Navbar />
-  <RouterView />
-  <ContactForm />
+  <RouterView class="mt-12" />
+
   <Footer />
 </template>
